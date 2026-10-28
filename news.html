@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Conception Radical provides drafting, engineering & programming services to manufacturing and construction businesses.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>News – Conception Radical</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="index.html" style="font-weight: 600;">Home</a>
+        <a href="services.html" style="font-weight: 600;">Services</a>
+        <a href="news.html" style="font-weight: 600; color: var(--accent);">News</a>
+        <a href="portfolio.html" style="font-weight: 600;">Portfolio</a>
+        <a href="knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+        <a href="about.html" style="font-weight: 600;">About</a>
+        <a href="contact.html" style="font-weight: 600;">Contact</a>
+        <a href="client-portal.html" style="font-weight: 600;">Client Portal</a>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1>News</h1>
+    
+
+    <section class="section card-list">
+
+      <!-- NEWEST NEWS POSTS GO HERE (Top of the list) -->
+	  
+	  <!-- BANQUE NATIONALE POST -->
+      <article class="card">
+        <img src="news/banque-nationale.png" alt="National Bank building project collaboration with Epsylon" class="thumb">
+        <h3><a href="news/banque-nationale.html">Banque Nationale Project</a></h3>
+        <p class="meta">2025-03 · News</p>
+        <p>
+          "This award is not just a recognition of the project, but also a celebration of the amazing coalition of teams that built it."
+        </p>
+      </article>
+	  
+	  <!-- NEW LOGO POST -->
+      <article class="card">
+        <img src="news/new-logo-and-website.png" alt="New logo and new website" class="thumb" style="mix-blend-mode: screen;">
+        <h3><a href="news/new-logo-and-website.html">New logo and new website</a></h3>
+        <p class="meta">2023-10-25 · News</p>
+        <p>
+          Modernizing our company image, moving away from political associations, and launching our brand-new website.
+        </p>
+      </article>
+
+      	  
+	  <!-- IMPRESSION 3D POST -->
+      <article class="card">
+        <!-- Note: Ensure you place your image file inside the news/ folder as impression-3d.png, or use a general thumbnail fallback -->
+        <img src="news/impression-3d.png" alt="La réalité de l'impression 3D" class="thumb" onerror="this.style.display='none'">
+        <h3><a href="news/impression-3d.html">The Reality of 3D Printing</a></h3>
+        <p class="meta">2018-04 · Notes</p>
+        <p>
+          Un regard terre-à-terre sur l'impression 3D. L'ingénierie restera toujours une science de compromis. / A grounded perspective on 3D printing and engineering compromises.
+        </p>
+      </article>
+
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

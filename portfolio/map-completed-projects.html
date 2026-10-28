@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Interactive map of completed engineering and design projects by Conception Radical.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Map of Completed Projects – Conception Radical</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    .map-container {
+      width: 100%;
+      height: 600px;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #222222;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .construction-badge {
+      display: inline-block;
+      background: rgba(122, 204, 0, 0.15);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="../index.html" style="font-weight: 600;">Home</a>
+        <a href="../services.html" style="font-weight: 600;">Services</a>
+        <a href="../news.html" style="font-weight: 600;">News</a>
+        <a href="../portfolio.html" style="font-weight: 600; color: var(--accent);">Portfolio</a>
+        <a href="../knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+        <a href="../about.html" style="font-weight: 600;">About</a>
+        <a href="../contact.html" style="font-weight: 600;">Contact</a>
+        <a href="../client-portal.html" style="font-weight: 600;">Client Portal</a>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <article class="section">
+      <div class="construction-badge">Under Construction</div>
+      <h1>Map of Completed Projects</h1>
+      <p class="lead">
+        Explore the geographical reach of our completed engineering, structural glass, and design projects.
+      </p>
+
+      <!-- EMBEDDED MAP FRAME -->
+      <div class="map-container">
+        <iframe src="map.html" title="Interactive Map of Completed Projects" allowfullscreen=""></iframe>
+      </div>
+
+      <p style="margin-top: 2rem;">
+        <a href="../portfolio.html">← Back to Portfolio</a>
+      </p>
+    </article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
