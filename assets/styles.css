@@ -104,7 +104,7 @@ a:hover {
 }
 
 .logo {
-  height: 48px;
+  height: 110px;
   width: auto;
   display: block;
 }
@@ -112,8 +112,8 @@ a:hover {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  font-size: 0.95rem;
+  gap: 1rem;
+  font-size: 1.2rem;
 }
 
 .site-nav a {
@@ -366,4 +366,99 @@ main {
   font-size: 0.85rem;
   color: var(--text); /* Ensures description text is fully visible (chalk white) */
   line-height: 1.4;
+}
+
+/* -------------------------------------------------- */
+/* FOOTNOTES & ETYMOLOGY */
+/* -------------------------------------------------- */
+
+.footnote-ref {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.footnote-ref:hover {
+  text-decoration: underline;
+}
+
+.footnotes {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footnote-item {
+  margin-bottom: 1rem;
+}
+
+.footnote-item strong {
+  color: var(--text);
+}
+
+.footnote-phonetic {
+  color: var(--accent);
+}
+
+/* -------------------------------------------------- */
+/* PORTAL & COMPONENT ADDITIONS */
+/* -------------------------------------------------- */
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-active,
+.footer-accent {
+  color: var(--accent);
+}
+
+.portal-card {
+  margin-top: 1.5rem;
+  max-width: 650px;
+}
+
+.portal-guidelines {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 1rem;
+  color: var(--text);
+}
+
+.portal-guidelines li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.btn-portal {
+  display: inline-block;
+  background: var(--accent);
+  color: #1A1A1A;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1.25rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-portal:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.construction-badge {
+  display: inline-block;
+  background: rgba(122, 204, 0, 0.15);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
