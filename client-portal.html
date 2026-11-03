@@ -6,36 +6,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Client Portal – Conception Radical</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <style>
-    .portal-container {
-      width: 100%;
-      height: 650px;
-      margin-top: 1.5rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      overflow: hidden;
-      background: #222222;
-      position: relative;
-    }
-    .portal-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .construction-badge {
-      display: inline-block;
-      background: rgba(122, 204, 0, 0.15);
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 0.25rem 0.75rem;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-  </style>
 </head>
 <body>
 
@@ -50,14 +20,14 @@
       </h1>
 
       <nav class="site-nav">
-        <a href="index.html" style="font-weight: 600;">Home</a>
-        <a href="services.html" style="font-weight: 600;">Services</a>
-        <a href="news.html" style="font-weight: 600;">News</a>
-        <a href="portfolio.html" style="font-weight: 600;">Portfolio</a>
-        <a href="knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
-        <a href="about.html" style="font-weight: 600;">About</a>
-        <a href="contact.html" style="font-weight: 600;">Contact</a>
-        <a href="client-portal.html" style="font-weight: 600; color: var(--accent);">Client Portal</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="knowledge-base.html" class="nav-link">Knowledge Base</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="client-portal.html" class="nav-link nav-active">Client Portal</a>
       </nav>
 
     </div>
@@ -68,40 +38,49 @@
   <div class="container">
 
     <article class="section">
-      <div class="construction-badge">Coming Soon · Under Construction</div>
+      <!-- <div class="construction-badge">Coming Soon · Under Construction</div> -->
       <h1>Client Portal</h1>
       <p class="lead">
-        A secure, centralized workspace for active project tracking, technical deliverables, and client communications.
+        A secure, centralized workspace<a href="#def-9" class="footnote-ref"><sup>1</sup></a> for active project tracking, technical deliverables, and client communications.
       </p>
 
-      <p style="color: var(--muted); margin-bottom: 1.5rem;">
-        We are currently setting up our integrated workspace. This portal will be fully online shortly.
-      </p>
 
-      <!-- EMBEDDED SHAREPOINT FRAME -->
-      <div class="portal-container">
-        <!-- Replace src="https://your-sharepoint-url-here" with your actual SharePoint page URL -->
-        <iframe src="" title="Conception Radical Client Portal" allowfullscreen=""></iframe>
+
+      <!-- PORTAL ACCESS PANEL -->
+      <div class="card portal-card">
+        <h3>Access Your Dedicated Workspace</h3>
+        <p>Our collaborative spaces run on Microsoft SharePoint. Please follow these guidelines before entering:</p>
+        
+        <ul class="portal-guidelines">
+          <li><strong>Corporate Account:</strong> Sign in with the work email authorized during kickoff.</li>
+          <li><strong>Multi-Factor Authentication:</strong> Have your authenticator code ready if prompt appears.</li>
+          <li><strong>Security Trimming:</strong> You will strictly see files and workspaces assigned to your company.</li>
+        </ul>
+
+        <a href="https://conceptionradical.sharepoint.com/sites/ClientPortal" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-portal">
+          Open Client Portal ↗
+        </a>
       </div>
-    </article>
 
-    <!-- ETYMOLOGY SECTION -->
-    <section class="section">
-      <hr class="section-divider">
-      <h3><span style="color: var(--accent);">/ˈʃɛər.pɔɪnt/</span> <span style="color: var(--text); font-weight: normal;">(American Heritage standard pronunciation key with short-vowel marks and accent symbols)</span></h3>
-      <p class="lead">
-        <em>noun</em><br>
-        MICROSOFT; a centralized infrastructure designed for team collaboration, intranet storage, and secure workflow integration.
-      </p>
-      <hr class="section-divider">
-    </section>
+      <!-- FOOTNOTES SECTION -->
+      <section class="section footnotes">
+        <div id="def-9" class="footnote-item">
+          <strong>1. Share·Point</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈʃɛər.pɔɪnt/</span> <br>
+          <em>(Microsoft)</em> A centralized infrastructure designed for team collaboration, intranet storage, and secure workflow integration.
+        </div>
+      </section>
+
+    </article>
 
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p>© <span id="year"></span> <span class="footer-accent">Conception Radical</span>. All rights reserved.</p>
   </div>
 </footer>
 
