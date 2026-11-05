@@ -22,6 +22,36 @@
       height: 100%;
       border: none;
     }
+    /* Expand / Fullscreen Button Styling */
+    .expand-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      z-index: 10;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.2s;
+    }
+    .expand-btn:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+    /* Fullscreen Mode State */
+    .vault-container.fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999;
+      border-radius: 0;
+      margin-top: 0;
+    }
     .construction-badge {
       display: inline-block;
       background: rgba(122, 204, 0, 0.15);
@@ -31,7 +61,7 @@
       border-radius: 4px;
       font-size: 0.85rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 1.0rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
     }
@@ -78,8 +108,9 @@
         We are currently compiling and publishing our digital garden<a href="#def-7" class="footnote-ref"><sup>1</sup></a>. This section will be fully accessible shortly.
       </p>
 
-      <!-- EMBEDDED OBSIDIAN / QUARTZ VAULT FRAME -->
-      <div class="vault-container">
+      <!-- EMBEDDED OBSIDIAN / QUARTZ VAULT FRAME WITH EXPAND BUTTON -->
+      <div class="vault-container" id="vaultContainer">
+        <button class="expand-btn" id="expandBtn" onclick="toggleFullscreen()">Expand ⛶</button>
         <iframe src="https://conceptionradical.github.io/knowledge/" title="Conception Radical Knowledge Base Vault" allowfullscreen=""></iframe>
       </div>
     </article>
@@ -103,6 +134,21 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  function toggleFullscreen() {
+    const container = document.getElementById('vaultContainer');
+    const btn = document.getElementById('expandBtn');
+    
+    container.classList.toggle('fullscreen');
+    
+    if (container.classList.contains('fullscreen')) {
+      btn.textContent = 'Collapse 🗗';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling when expanded
+    } else {
+      btn.textContent = 'Expand ⛶';
+      document.body.style.overflow = ''; // Restore page scrolling
+    }
+  }
 </script>
 
 </body>
