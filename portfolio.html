@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Engineering and design projects completed by Conception Radical.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Portfolio – Conception Radical</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="index.html" style="font-weight: 600;">Home</a>
+        <a href="services.html" style="font-weight: 600;">Services</a>
+        <a href="news.html" style="font-weight: 600;">News</a>
+        <a href="portfolio.html" style="font-weight: 600; color: var(--accent);">Portfolio</a>
+        <a href="knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+        <a href="about.html" style="font-weight: 600;">About</a>
+        <a href="contact.html" style="font-weight: 600;">Contact</a>
+        <a href="client-portal.html" style="font-weight: 600;">Client Portal</a>
+		<!-- Global Translate Button -->
+		<button onclick="triggerFrenchTranslation()" class="btn-lang" title="FR">🇫🇷 FR</button>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="container">
+  
+  <article class="section">
+      <!-- UNDER CONSTRUCTION BADGE -->
+      <div class="construction-badge">Under Construction</div>
+
+    <h1>Portfolio<a href="#def-6" class="footnote-ref"><sup>1</sup></a></h1>
+
+    <section class="section card-list">
+
+      <!-- MAP TILE (FIRST TILE) -->
+      <article class="card">
+        <a href="portfolio/map-completed-projects.html">
+          <img src="assets/portfolio-map-thumb.jpg" alt="Map of completed projects" class="thumb">
+       
+        <h3>Interactive map</h3>
+		</a>
+        <p class="meta">Explore an interactive map showing the locations of completed engineering and design projects.</p>
+		 
+      </article>
+
+      <!-- SAMPLE PROJECT 1 -->
+      <article class="card">
+        <a href="portfolio/curtain-wall.html">
+          <img src="assets/curtain-wall.jpg" alt="Curtain Wall" class="thumb">
+        
+        <h3>Curtain Wall</h3>
+        <p class="meta"></p>
+		</a>
+        <p>
+          Various Curtain Wall Window Wall Skylights and structural glass projects.
+        </p>
+		
+      </article>
+
+      <!-- SAMPLE PROJECT 2 -->
+      <article class="card">
+         <a href="portfolio/metal-cladding.html"> 
+          <img src="assets/metal-cladding.jpg" alt="Metal Cladding" class="thumb">
+        
+        <h3>Metal Cladding</h3>
+        <p class="meta"></p>
+		 </a> 
+        <p>
+          Various aluminum, brass, zinc and steel cladding projects.
+        </p>
+		
+      </article>
+
+      <!-- SAMPLE PROJECT 3 -->
+      <article class="card">
+        <!-- <a href="steel-structures.html"> -->
+          <img src="assets/steel-structures.jpg" alt="Steel Structures" class="thumb">
+        
+        <h3>Steel Structures</h3>
+        <p class="meta"></p>
+		<!-- </a> -->
+        <p>
+          Steel Structures, miscellaneous metals, staircases.
+        </p>
+		
+      </article>
+      
+      <!-- SAMPLE PROJECT 4 -->
+      <article class="card">
+         <a href="portfolio/tools-machines.html"> 
+          <img src="assets/tools-machines.jpg" alt="Tools & Machines" class="thumb">
+        
+        <h3>Tools & Machines</h3>
+        <p class="meta"></p>
+		</a>
+        <p>          Machines, jigs, tooling.
+        </p>
+		
+      </article>
+      
+      <!-- SAMPLE PROJECT 5 -->
+       <article class="card"> 
+        <a href="portfolio/product-design.html">
+          <img src="assets/product-design.jpg" alt="Product Design" class="thumb">
+        
+        <h3>Product Design</h3>
+        <p class="meta"></p>
+		</a>
+        <p>
+          Product design.
+        </p>
+		
+      </article>
+	  
+	   <!-- SAMPLE PROJECT 6 -->
+       <article class="card"> 
+        <a href="portfolio/process-engineering.html"> 
+          <img src="assets/process-engineering.jpg" alt="Process Engineering" class="thumb">
+        
+        <h3>Process Engineering</h3>
+        <p class="meta"></p>
+		</a>
+        <p>
+          Process Engineering.
+        </p>
+		
+      </article>
+
+    </section>
+    
+    <!-- CONSOLIDATED ETYMOLOGY / FOOTNOTES SECTION -->
+    <section class="section footnotes">
+      <div id="def-6" class="footnote-item" style="margin-bottom: 0;">
+        <strong>1. rad·i·cal</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈræd ɪ kəl/</span> <br>
+        <em>(Informal – North American)</em> Very good; excellent!
+      </div>
+    </section>
+	</article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p id="translationDisclaimer" class="translation-disclaimer">
+      <em>Note : Seule la version anglaise est maintenue à jour. La version française est traduite automatiquement. Veuillez toujours vous référer à  la <a href="portfolio.html"> version originale </a>.</em>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+<!-- Page-Specific Script -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

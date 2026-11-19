@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Technical documentation, engineering notes, and resources from Conception Radical.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Knowledge Base – Conception Radical</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* Specific height override for the knowledge base vault */
+    .vault-container {
+      height: 650px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="index.html" style="font-weight: 600;">Home</a>
+        <a href="services.html" style="font-weight: 600;">Services</a>
+        <a href="news.html" style="font-weight: 600;">News</a>
+        <a href="portfolio.html" style="font-weight: 600;">Portfolio</a>
+        <a href="knowledge-base.html" style="font-weight: 600; color: var(--accent);">Knowledge Base</a>
+        <a href="about.html" style="font-weight: 600;">About</a>
+        <a href="contact.html" style="font-weight: 600;">Contact</a>
+        <a href="client-portal.html" style="font-weight: 600;">Client Portal</a>
+		<!-- Global Translate Button -->
+		<button onclick="triggerFrenchTranslation()" class="btn-lang" title="FR">🇫🇷 FR</button>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <article class="section">
+      <div class="construction-badge">Under Construction</div>
+      <h1>Knowledge Base</h1>
+      <p class="lead">
+        A structured repository of engineering standards, technical notes, automation guides, and design methodology.
+      </p>
+
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">
+        We are currently compiling and publishing our digital garden<a href="#def-7" class="footnote-ref"><sup>1</sup></a>. This section will be fully accessible shortly.
+      </p>
+
+      <!-- EMBEDDED OBSIDIAN / QUARTZ VAULT FRAME WITH EXPAND BUTTON -->
+      <div class="project-viewer-container vault-container" id="vaultContainer">
+        <button class="expand-btn" id="vaultExpandBtn" onclick="toggleFullscreen('vaultContainer', 'vaultExpandBtn')">Expand ⛶</button>
+        <iframe src="https://knowledge.conceptionradical.com" title="Conception Radical Knowledge Base Vault" allowfullscreen=""></iframe>
+      </div>
+    </article>
+
+    <!-- CONSOLIDATED ETYMOLOGY / FOOTNOTES SECTION -->
+    <section class="section footnotes">
+      <div id="def-7" class="footnote-item" style="margin-bottom: 0;">
+        <strong>1. dig·i·tal gar·den</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈdɪʒ.ɪ.təl ˈɡɑːr.dən/</span> <br>
+        <em>(Knowledge Management)</em> A collection of evolving, interconnected notes and ideas cultivated openly over time, moving away from rigid chronological publication toward organic growth.
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p id="translationDisclaimer" class="translation-disclaimer">
+      <em>Note : Seule la version anglaise est maintenue à jour. La version française est traduite automatiquement. Veuillez toujours vous référer à  la <a href="portfolio.html"> version originale </a>.</em>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+</body>
+</html>

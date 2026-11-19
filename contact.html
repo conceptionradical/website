@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Conception Radical for drafting, engineering & programming services.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Contact – Conception Radical</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="index.html" style="font-weight: 600;">Home</a>
+        <a href="services.html" style="font-weight: 600;">Services</a>
+        <a href="news.html" style="font-weight: 600;">News</a>
+        <a href="portfolio.html" style="font-weight: 600;">Portfolio</a>
+        <a href="knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+        <a href="about.html" style="font-weight: 600;">About</a>
+        <a href="contact.html" style="font-weight: 600; color: var(--accent);">Contact</a>
+        <a href="client-portal.html" style="font-weight: 600;">Client Portal</a>
+		<!-- Global Translate Button -->
+		<button onclick="triggerFrenchTranslation()" class="btn-lang" title="FR">🇫🇷 FR</button>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1>Contact<a href="#def-8" class="footnote-ref"><sup>1</sup></a></h1>
+
+    <!-- FULL-LENGTH EMBEDDED MICROSOFT FORM (NO SCROLLBAR) -->
+    <div style="margin-top: 1.5rem; margin-bottom: 2rem;">
+      <iframe width="100%" height="1200px" src="https://forms.cloud.microsoft/r/jhFp2ddRzn?embed=true" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width: 100%; border-radius: 6px;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+    </div>
+
+    <p class="meta" style="margin-top: 1.5rem;">
+      If you can't see the form above, you can 
+      <a href="https://forms.cloud.microsoft/r/jhFp2ddRzn" target="_blank" style="color: var(--accent);">fill it out directly here</a>.
+    </p>
+
+    <!-- CONSOLIDATED ETYMOLOGY / FOOTNOTES SECTION -->
+    <section class="section footnotes">
+      <div id="def-8" class="footnote-item" style="margin-bottom: 0;">
+        <strong>1. rad·i·cal</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈrædɪkl/</span> <br>
+        <em>(Linguistics)</em> Denoting or relating to the roots of a word (such as radical morphemes).
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p id="translationDisclaimer" class="translation-disclaimer">
+      <em>Note : Seule la version anglaise est maintenue à jour. La version française est traduite automatiquement. Veuillez toujours vous référer à  la <a href="portfolio.html"> version originale </a>.</em>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

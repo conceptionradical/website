@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Secure client portal for project documentation, deliverables, and collaboration with Conception Radical.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Client Portal – Conception Radical</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="knowledge-base.html" class="nav-link">Knowledge Base</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="client-portal.html" class="nav-link nav-active">Client Portal</a>
+		<!-- Global Translate Button -->
+		<button onclick="triggerFrenchTranslation()" class="btn-lang" title="FR">🇫🇷 FR</button>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <article class="section">
+      <!-- <div class="construction-badge">Coming Soon · Under Construction</div> -->
+      <h1>Client Portal</h1>
+      <p class="lead">
+        A secure, centralized workspace<a href="#def-9" class="footnote-ref"><sup>1</sup></a> for active project tracking, technical deliverables, and client communications.
+      </p>
+
+
+
+      <!-- PORTAL ACCESS PANEL -->
+      <div class="card portal-card">
+        <h3>Access Your Dedicated Workspace</h3>
+        <p>Our collaborative spaces run on Microsoft SharePoint. Please follow these guidelines before entering:</p>
+        
+        <ul class="portal-guidelines">
+          <li><strong>Corporate Account:</strong> Sign in with the work email authorized during kickoff.</li>
+          <li><strong>Multi-Factor Authentication:</strong> Have your authenticator code ready if prompt appears.</li>
+          
+        </ul>
+
+        <a href="https://conceptionradical.sharepoint.com/sites/ClientPortal" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-portal">
+          Open Client Portal ↗
+        </a>
+      </div>
+	  
+
+
+      <!-- FOOTNOTES SECTION -->
+      <section class="section footnotes">
+        <div id="def-9" class="footnote-item">
+          <strong>1. Share·Point</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈʃɛər.pɔɪnt/</span> <br>
+          <em>(Microsoft)</em> A centralized infrastructure designed for team collaboration, intranet storage, and secure workflow integration.
+        </div>
+      </section>
+
+    </article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p id="translationDisclaimer" class="translation-disclaimer">
+      <em>Note : Seule la version anglaise est maintenue à jour. La version française est traduite automatiquement. Veuillez toujours vous référer à  la <a href="portfolio.html"> version originale </a>.</em>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

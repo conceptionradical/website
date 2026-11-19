@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Conception Radical provides drafting, engineering & programming services to manufacturing and construction businesses.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Conception Radical – Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Conception Radical logo" class="logo">
+      </a>
+    </h1>
+
+    <nav class="site-nav">
+      <a href="index.html" style="font-weight: 600; color: var(--accent);">Home</a>
+      <a href="services.html" style="font-weight: 600;">Services</a>
+      <a href="news.html" style="font-weight: 600;">News</a>
+      <a href="portfolio.html" style="font-weight: 600;">Portfolio</a>
+      <a href="knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+      <a href="about.html" style="font-weight: 600;">About</a>
+      <a href="contact.html" style="font-weight: 600;">Contact</a>
+      <a href="client-portal.html" style="font-weight: 600;">Client Portal</a>
+		<!-- Global Translate Button -->
+		<button onclick="triggerFrenchTranslation()" class="btn-lang" title="FR">🇫🇷 FR</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- 1. HERO / VALUE PROPOSITION SECTION -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <h2 style="font-size: 2.4rem; margin-bottom: 1rem; line-height: 1.2;">Mechanical Engineering & SolidWorks Automation for Forward-Thinking Manufacturers</h2>
+      <p class="lead" style="font-size: 1.2rem; max-width: 800px; margin-bottom: 1.5rem; line-height: 1.6;">
+        We design products, custom tooling, automate CAD/CAM workflows, and build rule-based product configurators to slash production lead times. 
+        <br><br>
+        Serving manufacturers across Quebec province for on-site projects. CAD and automation available globally.
+      </p>
+    </section>
+
+   <!-- 2. WHAT WE DO (TECHNICAL GRID) SECTION -->
+    <section class="section">
+      <h2>What we do</h2>
+      
+      <div class="hero-grid">
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/product-configurator.jpg" alt="Parametric modeling">
+          <div class="hero-text">
+            <h2>CAD Automation & Configurators</h2>
+            <p>Rule‑driven automation systems for SolidWorks</p>
+          </div>
+        </a>
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/custom-macros.jpg" alt="Macros automation">
+          <div class="hero-text">
+            <h2>Custom Macros</h2>
+            <p>Automate repetitive engineering tasks</p>
+          </div>
+        </a>
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/training-coaching.jpg" alt="Training and coaching">
+          <div class="hero-text">
+            <h2>Training & coaching</h2>
+            <p>Upskill your team in CAD, CNC and Engineering</p>
+          </div>
+        </a>
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/mechanical-design.jpg" alt="Mechanical design">
+          <div class="hero-text">
+            <h2>Mechanical Design</h2>
+            <p>Machines, tooling, new product development</p>
+          </div>
+        </a>
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/process-engineering.jpg" alt="Industrial design">
+          <div class="hero-text">
+            <h2>Manufacturing Operations</h2>
+            <p>Factory layouts & process optimization</p>
+          </div>
+        </a>
+
+        <a class="hero-tile" href="services.html">
+          <img src="assets/cnc-programming.jpg" alt="CNC programming">
+          <div class="hero-text">
+            <h2>CNC Programming</h2>
+            <p>G Code, MasterCam, Metalix, SolidWorks CAM</p>
+          </div>
+        </a>
+      </div>
+      
+      <!-- Call to Action Button -->
+	<div style="text-align: center;">
+	  <a href="contact.html" class="button" style="display: inline-block; padding: 12px 24px; background-color: var(--accent); color: #222; text-decoration: none; font-weight: 600; border-radius: 4px; margin-top: 2rem;">Book a Discovery Call</a>
+	</div>
+
+      <!-- Logo sized cleanly using existing classes and reference styles -->
+      <img src="assets/radical-logo-round-green-white.png" alt="Conception Radical Round Logo" class="thumb" style="margin-top: 2rem; height: auto; max-height: 500px; object-fit: contain; background: transparent;">
+      
+    </section>
+
+    <!-- 3. ETYMOLOGY SECTION (Updated to unified footnote style) -->
+    <section class="section footnotes" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+      <div class="footnote-item" style="margin-bottom: 0.75rem;">
+        <strong>rad·i·cal</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈrædɪkəl/</span> <br>
+        <em>(Informal)</em> Relating to or advocating fundamental or revolutionary changes in current practices, conditions, or institutions.
+      </div>
+      <p style="margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.6; max-width: 800px;">
+        At Conception Radical, this means replacing outdated manufacturing bottlenecks with rule-driven automation, precision tooling, and optimized CNC workflows.
+      </p>
+    </section>
+
+    <section class="section" style="margin-top: 1.5rem;">
+      <p class="meta">Learn about our philosophy and engineering principles on the <a href="about.html">About page</a>.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+    <p id="translationDisclaimer" class="translation-disclaimer">
+      <em>Note : Seule la version anglaise est maintenue à jour. La version française est traduite automatiquement. Veuillez toujours vous référer à  la <a href="portfolio.html"> version originale </a>.</em>
+    </p>
+  </div>
+</footer>
+
+
+
+<!-- Shared Engine Script -->
+<script src="assets/portfolio-engine.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
