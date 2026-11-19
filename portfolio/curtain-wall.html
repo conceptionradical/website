@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Curtain wall and structural glazing engineering projects completed by Conception Radical.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Curtain Wall & Glazing – Conception Radical</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-background">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="index.html">
+          <img src="../assets/logo.png" alt="Conception Radical logo" class="logo">
+        </a>
+      </h1>
+      <nav class="site-nav">
+        <a href="../index.html" style="font-weight: 600;">Home</a>
+        <a href="../services.html" style="font-weight: 600;">Services</a>
+        <a href="../news.html" style="font-weight: 600;">News</a>
+        <a href="../portfolio.html" style="font-weight: 600; color: var(--accent);">Portfolio</a>
+        <a href="../knowledge-base.html" style="font-weight: 600;">Knowledge Base</a>
+        <a href="../about.html" style="font-weight: 600;">About</a>
+        <a href="../contact.html" style="font-weight: 600;">Contact</a>
+        <a href="../client-portal.html" style="font-weight: 600;">Client Portal</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div id="mainPortfolioView">
+      <h1>Curtain Wall & Glazing<a href="#def-6" class="footnote-ref"><sup>1</sup></a></h1>
+      <p class="lead" style="margin-bottom: 1.5rem;">Structural glass facades, unitized curtain wall systems, storefront, window wall, glass balustrades, skylights.</p>
+
+      <!-- PORTFOLIO GRID POPULATED AUTOMATICALLY -->
+      <section class="section card-list" id="portfolio-grid">
+        <!-- Injected via portfolio-engine.js -->
+      </section>
+	  
+	  	   <p style="margin-top: 2rem;">
+        <a href="../portfolio.html">← Back to Portfolio</a>
+      </p>
+      
+      <!-- CONSOLIDATED ETYMOLOGY / FOOTNOTES SECTION -->
+      <section class="section footnotes">
+        <div id="def-6" class="footnote-item" style="margin-bottom: 0;">
+          <strong>1. rad·i·cal</strong> &nbsp;|&nbsp; <span class="footnote-phonetic">/ˈræd ɪ kəl/</span> <br>
+          <em>(Informal – North American)</em> Very good; excellent!
+        </div>
+      </section>
+    </div>
+
+    <!-- EMBEDDED VIEWER CONTAINER -->
+    <div class="viewer-wrapper" id="viewerWrapper">
+      <div class="back-nav-bar">
+        <button class="btn-back" onclick="closeProjectViewer()">← Back to Curtain Wall & Glazing</button>
+      </div>
+      <div class="project-viewer-container" id="projectViewerContainer">
+        <button class="expand-btn" id="expandBtn" onclick="toggleFullscreen()"> ⛶ </button>
+        <iframe id="projectIframe" src="" title="Project Detail Viewer"></iframe>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> <span style="color: var(--accent);">Conception Radical</span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Sector Configuration & Engine Script -->
+<script>
+  const sectorConfig = {
+    sectorName: "Curtain Wall",
+    projects: [
+      {
+        //title: "Residential Skylight",
+        //image: "residential-skylight-2012.png",
+        //meta: "Skylight",
+        //description: "skylight - Residential project, 2012",
+        //link: "residential-skylight-2012.html" // Update with detail page link or leave empty ("")
+      //},
+	  //{
+        title: "Unitized Curtain Wall",
+        image: "unitized-curtain-wall.png",
+        meta: "UCW Unit",
+        description: "Parametric modeling and configurator for manufacturing drawings of unitized curtain wall units",
+        link: "unitized-curtain-wall.html" // Update with detail page link or leave empty ("")
+      },
+	  {
+       title: "Residential Skylight",
+        image: "residential-skylight-2012.png",
+        meta: "Skylight",
+        description: "Residential project, 2012",
+        link: "residential-skylight-2012.html" // Update with detail page link or leave empty ("")
+      }
+    ]
+  };
+</script>
+<script src="../assets/portfolio-engine.js"></script>
+
+</body>
+</html>
